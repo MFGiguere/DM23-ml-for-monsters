@@ -1,0 +1,18 @@
+{% extends _base.html %}
+
+{% block title %}Profile{% endblock %}
+
+{% block body %}
+<h1>Profile</h1>
+<div class="blog">
+    {% for api in apis %}
+    <div class="card">
+        
+        <h2 class="card-title">{{ api[0] }}</h2> 
+        <p class="card-text">Écrivez votre clef d'API</p>
+        <a href="{{ api[1] }}">Apprenez comment.</a>
+        <input type="text">
+    </div>
+    {% endfor %}
+    
+</div>
